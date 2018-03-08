@@ -27,6 +27,6 @@ print(opts)
 g = NeuroSAT(opts)
 g.restore()
 
-results = g.testate(opts.test_dir)
+results = g.test(opts.test_dir)
 for (test_filename, etest_cost, etest_mat) in results:
     print("%s %.4f (%.2f, %.2f, %.2f, %.2f)" % (test_filename, etest_cost, etest_mat.ff, etest_mat.ft, etest_mat.tf, etest_mat.tt))

@@ -195,7 +195,7 @@ class NeuroSAT(object):
 
         return (train_filename, epoch_train_cost, epoch_train_mat, learning_rate, epoch_end - epoch_start)
 
-    def testate(self, test_data_dir):
+    def test(self, test_data_dir):
         test_problems_loader = init_problems_loader(test_data_dir)
         results = []
 
